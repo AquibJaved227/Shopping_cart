@@ -1,0 +1,162 @@
+
+
+
+/* Container for the category cards */
+.categories-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line if there are too many cards */
+  gap: 20px; /* Adds spacing between cards */
+  justify-content: center; /* Centers the cards horizontally */
+}
+
+/* Style for individual category cards */
+.category-card {
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  align-items: center; /* Centers items horizontally */
+  border: 1px solid #ddd; /* Optional: Adds a border around the card */
+  padding: 10px; /* Adds padding inside the card */
+  width: 200px; /* Sets a fixed width for each card */
+}
+
+.category-image {
+  width: 100%; /* Makes the image responsive to the card width */
+  height: auto; /* Maintains aspect ratio of the image */
+  max-height: 150px; /* Optional: Limits the height of the image */
+}
+
+
+
+/* Style for the button */
+.category-card button {
+  background-color: #007bff; /* Primary background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition for background color and scaling */
+}
+
+/* Button hover effect */
+.category-card button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Button active (click) effect */
+.category-card button:active {
+  background-color: #004494; /* Darker background color on click */
+  transform: scale(0.98); /* Slightly scale down the button on click for a pressed effect */
+}
+
+
+
+/* Style for the navbar */
+.navbar {
+  background-color: #333; /* Background color of the navbar */
+  padding: 10px; /* Padding around the navbar */
+}
+
+.navbar ul {
+  list-style: none; /* Remove bullet points from the list */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Align items in a row */
+  justify-content: center; /* Center items horizontally */
+}
+
+.navbar li {
+  margin: 0 15px; /* Add space between links */
+}
+
+.navbar a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 16px; /* Font size */
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+.app_h1 {
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 20vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+.app_h1 h1 {
+  font-size: 2.5rem; /* Large font size */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center text alignment */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add padding around the text */
+  border: 2px solid #ddd; /* Optional border for emphasis */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background for the text area */
+}
+
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between product cards */
+  justify-content: center; /* Aligns the product cards horizontally */
+}
+
+.products-container div {
+  border: 1px solid #ddd; /* Optional border around each product card */
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Set a fixed width for each product card */
+}
+
+.products-container img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Restrict the height to 400px */
+  object-fit: contain; /* Ensures the image fits within the card */
+}
+
+h3, p {
+  margin: 10px 0;
+}
+
+
+
+
+nav {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px 20px; /* Adds some padding around the nav */
+  border-radius: 5px; /* Rounds the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+nav ul {
+  list-style: none; /* Removes bullet points from the list */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers the list horizontally */
+}
+
+nav ul li {
+  margin: 0 15px; /* Adds space between the list items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes the underline from the link */
+  color: #007bff; /* Blue color for the link */
+  font-weight: bold; /* Makes the text bold */
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #007bff; /* Changes the background color on hover */
+  color: white; /* Changes the text color to white on hover */
+}
